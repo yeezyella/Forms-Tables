@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tables & Forms</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Tables and Forms</h1>
+  </header>
+
+  <section>
+    <h2>Tables</h2>
+    <table class="classTable">
+      <caption>Top 3 Favorite Things</caption>
+      <tr>
+        <th>Foods</th>
+        <th>Activities</th>
+        <th>Musicians</th>
+      </tr>
+      <tr>
+        <td>Pizza</td>
+        <td>Sleeping</td>
+        <td>Autumn</td>
+      </tr>
+
+      <tr>
+        <td>Chiptole</td>
+        <td>Shopping</td>
+        <td>Mac Demarco</td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          Break row - span 3 cols
+        </td>
+        
+      </tr>
+      <tr>
+        <td rowspan="2">
+          food across 2 rows
+        </td>
+        <td>
+          Col2
+        </td>
+        <td>
+          Col3
+        </td>
+      </tr>
+      <tr>
+        <td>Col2</td>
+        <td>Col3</td>
+      </tr>
+      <tr>
+        <td>Col1</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Forms</h2>
+    <form action="https://formspree.io/f/xwkzzvng"
+  method="POST">
+      <label for="name">Name</label>
+      <input required name="name" id="name" type="text" placeholder="Enter your name">
+      <br>
+      <label for="height">Height</label>
+      <input name="height" id="height" type="text" placeholder="Enter your height">
+      <br>
+      <label for="password">Password</label>
+      <input type="password" id="password">
+      <br>
+      <p>Pick your top favorite meals:</p>
+      <label for="breakfast">Breakfast</label>
+      <input type="radio" id="breakfast" name="meal" value="1">
+      <br>
+      <label for="lunch">lunch</label>
+      <input type="radio" id="lunch" name="meal" value="2">
+      <br>
+      <label for="dinner">Dinner</label>
+      <input type="radio" id="dinner" name="meal" value="3">
+      <br>
+      <label for="Email">Email</label>
+      <input type="email" id="Email" name="Email">
+      <br>
+      <label for="date">Today's date(month)</label>
+      <input type="month" id="date" name="date">
+      <br>
+      <fieldset>
+      <legend>Caption for fieldset</legend>
+      <label for="slider">Range (Slider)
+      <input type="range" min="1" max="100" id="slider" name="slider" value="75" />
+      <br>
+      <label for="excitement">Excitement Meter:</label>
+      <meter id="excitement" name="excitement" value="75" min="1" max="100"></meter>
+      <br>
+      <label for="rating">Rating</label>
+      <input type="number" min="0" max="500" step="10" id="rating" name="rating" value="250">
+      <br>
+      <label for="superpower">Pick your super power</label>
+      <select id="superpower" name="superpower">
+        <option value="0">--select an option--</option>
+        <option value="1">Fly</option>
+        <option value="2">Invisibility</option>
+        <option value="3">Mindread</option>
+      </select>
+      </fieldset>
+      <br>
+       <label>
+    Your message:
+    <textarea id="message" name="message">Message coming in from Formspree</textarea>
+  </label>
+      <input type="submit" value="SUBMIT">
+      <figure>
+        <img src="https://thumbs.dreamstime.com/b/red-apple-isolated-clipping-path-19130134.jpg" width="200">
+        <figcaption>Image Caption</figcaption>
+      </figure>
+    </form>
+  </section>
+  
+</body>
+
+</html>
